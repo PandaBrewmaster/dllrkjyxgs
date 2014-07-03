@@ -12,17 +12,10 @@
 {/block}
 
 {block name=b_pagebody}
+<div class="bs-example" style="width: 1200px;margin:0 auto;">
 
 <h1>goodcase</h1>
     <a class="sr-only" href="#content">Skip to main content</a>
-
-
-
-
-
-    <!-- Callout for the old docs link -->
-    
-
     <div class="container bs-docs-container">
       <div class="row">
         <div class="col-md-3">
@@ -2213,6 +2206,7 @@
         </div>
       </div>
 
+    </div>
     </div>
 
 

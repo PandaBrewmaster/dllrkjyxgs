@@ -1,4 +1,4 @@
-{config_load file="language.conf"}
+{config_load file="cn.conf"}
 {include file="header.tpl" current=aboutus}
 
 <h1>about us</h1>

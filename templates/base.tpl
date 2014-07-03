@@ -4,10 +4,11 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     {* 更好的办法，直接从文件中读取 *}
-    {config_load file="language.conf" section="title"}
+    {config_load file="cn.conf" section="title"}
     <title>{#title#}</title>
     {*<title>{block name=b_title}{/block}</title>*}
     <link rel="stylesheet" href="./src/css/bootstrap.css">
+    <link rel="stylesheet" href="./src/css/docs.css">
     {block name=b_pagecss}{/block}
     <script src="http://s1.bdstatic.com/r/www/cache/ecom/esl/1-8-2/esl.js"></script>
 </head>
