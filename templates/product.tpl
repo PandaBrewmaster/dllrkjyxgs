@@ -39,7 +39,7 @@
 
 {block name=b_pagejs}
 <script type="text/javascript">
-    require(['src/tab']);
+    require(['js/tab']);
 </script>
 {/block}
 

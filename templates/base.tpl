@@ -20,7 +20,9 @@
 
     <script>
     require.config({
-
+        paths : {
+            js: 'src'
+        },
         'packages': 
             [
             {

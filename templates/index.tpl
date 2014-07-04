@@ -64,7 +64,7 @@
 
 {block name=b_pagejs}
 <script type="text/javascript">
-    // require(['src/carousel']);
+    require(['js/carousel']);
 </script>
 {/block}
 

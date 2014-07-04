@@ -2218,7 +2218,7 @@
 
 {block name=b_pagejs}
 <script type="text/javascript">
-    require(['src/affix']);
+    require(['js/affix']);
 </script>
 {/block}
 
