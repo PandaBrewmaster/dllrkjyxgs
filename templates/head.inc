@@ -1,5 +1,6 @@
 {config_load file="cn.conf" section="menu"}
-<header class="navbar navbar-inverse navbar-fixed-top bs-docs-nav" role="banner">
+<a class="sr-only sr-only-focusable" href="#content">Skip to main content</a>
+<header class="navbar navbar-static-top bs-docs-nav" id="top" role="banner">
   <div class="container">
     <div class="navbar-header">
       <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">

@@ -4,7 +4,6 @@
 {block name=b_title}{$Name}{/block}
 
 {block name=b_pagecss}
-<link rel="stylesheet" href="./src/css/product.less" />
 {/block}
 
 {block name=b_pagehead}
@@ -12,9 +11,13 @@
 {/block}
 
 {block name=b_pagebody}
-
+<div class="bs-docs-header" id="content">
+    <div class="container">
+        <h1>全局 CSS 样式</h1>
+        <p>设置全局 CSS 样式；基本的 HTML 元素均可以通过 class 设置样式并得到增强效果；还有先进的栅格系统。</p>
+    </div>
+</div>
 <div class="bs-example" style="width: 1200px;margin:0 auto;">
-    <h1>product</h1>
     <ul class="nav nav-tabs" id="myTab">
       <li class="active"><a href="#home" data-toggle="tab">Home</a></li>
       <li><a href="#profile" data-toggle="tab">Profile</a></li>
@@ -38,9 +41,7 @@
 {/block}
 
 {block name=b_pagejs}
-<script type="text/javascript">
-    require(['js/tab']);
-</script>
+
 {/block}
 
 

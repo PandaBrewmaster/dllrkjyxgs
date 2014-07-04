@@ -14,7 +14,7 @@
             <th>关于</th>
             <th>帮助</th>
             <th>联系</th>
-            <td rowspan="4"><img title="" alt="" src="./dist/css/QP.png"></td>
+            <td rowspan="4"><img title="" alt="" src="./src/css/img/QP.png"></td>
         </tr>
         <tr>
             <td>t</td>
