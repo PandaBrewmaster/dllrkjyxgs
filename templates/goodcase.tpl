@@ -11,14 +11,7 @@
 {/block}
 
 {block name=b_pagebody}
-<div class="bs-docs-header" id="content">
-      <div class="container">
-        <h1>JavaScript 插件</h1>
-        <p>jQuery 插件为 Bootstrap 的组件赋予了“生命”。可以简单地一次性引入所有插件，或者逐个引入到你的页面中。</p>
-        
-      </div>
-</div>
-
+<div class="container">
 <div class="container bs-docs-container">
 
       <div class="row">
@@ -2313,6 +2306,9 @@
 
       </div>
     </div>
+</div>
+
+
 {/block}
 
 {block name=b_pagefoot}
@@ -2322,19 +2318,51 @@
 {block name=b_pagejs}
 <script type="text/javascript">
 
-    var $window = $(window)
-    var $body   = $(document.body)
-    $window.on('load', function () {
-      $body.scrollspy('refresh')
+!function ($) {
+
+  $(function(){
+
+    var $window = $(window);
+    var $body   = $(document.body);
+
+    var navHeight = $('.navbar').outerHeight(true) + 10;
+
+    $body.scrollspy({
+      target: '.bs-docs-sidebar',
+      offset: navHeight
     })
 
-    $('.bs-docs-sidebar').affix({
-      offset: {
+    $window.on('load', function () {
+      $body.scrollspy('refresh');
+    })
+
+    $('.bs-docs-container [href=#]').click(function (e) {
+      e.preventDefault();
+    })
+
+    // back to top
+    setTimeout(function () {
+      var $sideBar = $('.bs-docs-sidebar');
+
+      $sideBar.affix({
+          offset: {
         top: 100
       
-      }
-    })
-    // require(['js/affix']);
+        }
+      })
+    }, 100)
+
+    // setTimeout(function () {
+    //   $('.bs-top').affix()
+    // }, 100)
+
+
+})
+
+}(jQuery)
+
+
+
 </script>
 {/block}
 

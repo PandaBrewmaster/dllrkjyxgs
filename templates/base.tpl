@@ -7,18 +7,11 @@
     {config_load file="cn.conf" section="title"}
     <title>{#title#}</title>
     {*<title>{block name=b_title}{/block}</title>*}
-    {*<link rel="stylesheet" href="./src/css/bootstrap.css">*}
-    {*<link rel="stylesheet" href="./src/css/bootstrap-theme.css">*}
-    <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.2.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="http://v3.bootcss.com/assets/css/docs.min.css">
-    <style type="text/css">
-body {
-  font-family: "Helvetica Neue", Helvetica, Microsoft Yahei, Hiragino Sans GB, WenQuanYi Micro Hei, sans-serif;
-}
+    <link rel="stylesheet" href="./src/css/bootstrap.css">
+    <link rel="stylesheet" href="./src/css/docs.css">
 
-    </style>
     {block name=b_pagecss}{/block}
-    <script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+    <script src="./src/js/jquery-1.11.1.js"></script>
     <script src="./src/js/bootstrap.js"></script>
 </head>
 
